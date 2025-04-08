@@ -2,7 +2,7 @@
 
 ## **1. Add the following line to your `Podfile`** (version number varies)  
 ```
-pod 'LmsWebView', '0.0.3', :source => 'https://bitbucket.org/india_oss/circle-ios-mobile-sdk.git'
+pod 'LmsWebView', '0.0.3', :source => 'https://github.com/CircleLMS/ios-library-sdk.git'
 ```
 
 ## **2. Run pod install**   
