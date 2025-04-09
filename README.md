@@ -15,7 +15,7 @@ Open a WebView with a specified URL using the following function:
 LmsWebView.create (url: “www.sample.com”)  
 This will launch a WebView and load the specified URL within your application.
 ```
-LmsWebView.create(url: “https://safetytraining.hercrentals.com/?access_token={accessToken}”)
+LmsWebView.create(url: “https://safetytraining.hercrentals.com/?iframe&access_token={accessToken}”)
 ```
 
 ## **4. Sample URLs:**  
