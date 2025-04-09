@@ -19,8 +19,8 @@ LmsWebView.create(url: “https://safetytraining.hercrentals.com/?access_token={
 ```
 
 ## **4. Sample URLs:**  
-Course catalog page: https://qasafetytraining.hercrentals.com/course/catalog/  
-Course detail page: https://qasafetytraining.hercrentals.com/course/catalog/b8ba1023e33a11eab2fb0242ac120002
+Course catalog page: https://qasafetytraining.hercrentals.com/course/catalog/?iframe  
+Course detail page: https://qasafetytraining.hercrentals.com/course/catalog/b8ba1023e33a11eab2fb0242ac120002?iframe
 
 ## **5. Sample code:**  
 ```
