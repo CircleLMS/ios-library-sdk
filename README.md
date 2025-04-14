@@ -31,7 +31,7 @@ struct ContentView: View {
     // Used for Navigation status
     @State private var isActive: Bool = false    
     // URL to load with webview
-    @State private var url: String = " https://safetytraining.hercrentals.com/?access_token={accessToken}"
+    @State private var url: String = " https://qasafetytraining.hercrentals.com/course/catalog?access_token={accessToken}"
     var body: some View {
         NavigationView {	
             VStack {                
