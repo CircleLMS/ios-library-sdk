@@ -20,7 +20,7 @@ LmsWebView.create(url: “https://safetytraining.hercrentals.com/?iframe&access_
 
 ## **4. Sample URLs:**  
 Course catalog page: https://qasafetytraining.hercrentals.com/course/catalog/?iframe  
-Course detail page: https://qasafetytraining.hercrentals.com/course/catalog/b8ba1023e33a11eab2fb0242ac120002?iframe
+Course detail page (used in email invitation): https://qasafetytraining.hercrentals.com/course/catalog/b8ba1023e33a11eab2fb0242ac120002?iframe
 
 ## **5. Sample code:**  
 ```
