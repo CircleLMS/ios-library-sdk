@@ -4,7 +4,7 @@
 //
 //  Created by apple on 2024/12/19.
 
-struct Operate{
+struct LmsOperate{
         
     var reload: Bool
     

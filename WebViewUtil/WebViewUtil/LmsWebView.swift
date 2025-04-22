@@ -20,7 +20,7 @@ public struct LmsWebView: View {
     
     @State var webView = WKWebView()
     
-    @State var operate = Operate(reload: false, goBack: false)
+    @State var lmsOperate = LmsOperate(reload: false, goBack: false)
     
     @State var update = false
     
@@ -30,7 +30,7 @@ public struct LmsWebView: View {
             HStack{
                 Button(action:{
                     update = false
-                    operate = Operate(reload: true, goBack: false)
+                    lmsOperate = LmsOperate(reload: true, goBack: false)
                     update = true
                 }){
                     Text("Refresh")
@@ -39,7 +39,7 @@ public struct LmsWebView: View {
                 
                 Button(action:{
                     update = false
-                    operate = Operate(reload: false, goBack: true)
+                    lmsOperate = LmsOperate(reload: false, goBack: true)
                     update = true
                 }){
                     Text("Back")
@@ -59,7 +59,7 @@ public struct LmsWebView: View {
 
             LmsWebViewControllerRepresentable(
                 url: URL(string: url),
-                operate: $operate,
+                lmsOperate: $lmsOperate,
                 update: $update
             )
         }.navigationBarBackButtonHidden(true)

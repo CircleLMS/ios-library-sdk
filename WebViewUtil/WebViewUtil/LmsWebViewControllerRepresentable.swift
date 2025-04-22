@@ -5,7 +5,7 @@ struct LmsWebViewControllerRepresentable: UIViewControllerRepresentable{
     
     var url: URL?
     
-    @Binding var operate: Operate
+    @Binding var lmsOperate: LmsOperate
     
     @Binding var update: Bool
     
@@ -28,11 +28,11 @@ struct LmsWebViewControllerRepresentable: UIViewControllerRepresentable{
         }
         
         if update == true {
-            if self.operate.reload{
+            if self.lmsOperate.reload{
                 uiViewController.webView.reload()
             }
             
-            if self.operate.goBack{
+            if self.lmsOperate.goBack{
                 uiViewController.webView.goBack()
                 uiViewController.webView.goBack()
                 if(uiViewController.webView.canGoBack) {
