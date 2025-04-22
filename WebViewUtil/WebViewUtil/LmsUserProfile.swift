@@ -13,6 +13,25 @@ public struct LmsUserProfile{
     var userType: String
     var phoneNumber: String
     var accountStatus: String
+	
+	public static func create(accountNumber: String,
+                              accountName: String,
+                              role: String,
+                              driverLicense: String,
+                              country: String,
+                              userType: String,
+                              phoneNumber: String,
+                              accountStatus: String
+    ) -> LmsUserProfile {
+            return LmsUserProfile(accountNumber: accountNumber,
+                                  accountName: accountName,
+                                  role: role,
+                                  driverLicense: driverLicense,
+                                  country: country,
+                                  userType: userType,
+                                  phoneNumber: phoneNumber,
+                                  accountStatus: accountStatus)
+    }
     
     init(){
         self.accountNumber = ""
