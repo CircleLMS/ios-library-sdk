@@ -10,6 +10,10 @@ public struct LmsLaunchBuilder{
     var baseUrl: String
     var token: String
     var profile: LmsUserProfile
+	
+	public static func create(baseUrl: String) -> LmsLaunchBuilder {
+        return LmsLaunchBuilder(baseUrl: baseUrl)
+    }
     
     init(baseUrl: String){
         self.baseUrl = baseUrl
