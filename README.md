@@ -2,7 +2,7 @@
 
 ## **1. Add the following line to your `Podfile`** (version number varies)  
 ```
-pod 'LmsWebView', '0.0.4', :source => 'https://github.com/CircleLMS/ios-library-sdk.git'
+pod 'LmsWebView', '0.0.7', :source => 'https://github.com/CircleLMS/ios-library-sdk.git'
 ```
 
 ## **2. Run pod install**   
@@ -33,11 +33,24 @@ struct ContentView: View {
     // URL to load with webview
     @State private var url: String = " https://qasafetytraining.hercrentals.com/course/catalog?iframe&access_token={accessToken}"
     var body: some View {
-        NavigationView {	
-            VStack {                
-                TextField("URL", text: $url)
-                    .padding() 
-                NavigationLink(destination: LmsWebView.create(url: url), isActive: $isActive){
+        NavigationLink(destination:
+                                LmsLaunchBuilder
+                                .create(baseUrl: "https://safetytraining.hercrentals.com")
+                                .token(token: "access_token_here")
+                                .profile(profile:
+                                            LmsUserProfile.create(
+                                                accountNumber:"123456",
+                                                accountName:"John Doe",
+                                                role:"Admin",
+                                                driverLicense:"D12345678",
+                                                country:"US",
+                                                userType:"Credit",
+                                                phoneNumber:"+11234567890",
+                                                accountStatus:"A"
+                                            )
+                                )
+                                .launch()
+                               , isActive: $isActive) {
                     Button("Load Page") {
                         isActive = true
                     }
@@ -45,11 +58,7 @@ struct ContentView: View {
                     .background(Color.blue)
                     .foregroundColor(.white)
                     .cornerRadius(10)
-                }
-                
-            }
-        }
-        
+                }  
     }
 }
 
