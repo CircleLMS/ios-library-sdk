@@ -9,20 +9,13 @@ pod 'LmsWebView', '0.0.7', :source => 'https://github.com/CircleLMS/ios-library-
 ```
 pod install
 ```
-
-## **3. Use the WebView Library in Your Code**  
-Open a WebView with a specified URL using the following function:
-LmsWebView.create (url: “www.sample.com”)  
-This will launch a WebView and load the specified URL within your application.
-```
-LmsWebView.create(url: “https://safetytraining.hercrentals.com/?iframe&access_token={accessToken}”)
-```
-
-## **4. Sample URLs:**  
+## **3. Sample URLs:**  
 Course catalog page: https://qasafetytraining.hercrentals.com/course/catalog/?iframe  
 Course detail page (used in email invitation): https://qasafetytraining.hercrentals.com/course/catalog/b8ba1023e33a11eab2fb0242ac120002?iframe
 
-## **5. Sample code:**  
+## **4. Use the WebView Library in Your Code:**  
+Open a WebView with a specified URL using the following function:  
+This will launch a WebView and load the specified URL within your application.  
 ```
 import SwiftUI
 import LmsWebView
