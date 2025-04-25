@@ -13,15 +13,18 @@ public struct LmsUserProfile{
     var userType: String
     var phoneNumber: String
     var accountStatus: String
-	
-	public static func create(accountNumber: String,
+    var licenseState: String
+
+    
+    public static func create(accountNumber: String,
                               accountName: String,
                               role: String,
                               driverLicense: String,
                               country: String,
                               userType: String,
                               phoneNumber: String,
-                              accountStatus: String
+                              accountStatus: String,
+                              licenseState: String
     ) -> LmsUserProfile {
             return LmsUserProfile(accountNumber: accountNumber,
                                   accountName: accountName,
@@ -30,7 +33,8 @@ public struct LmsUserProfile{
                                   country: country,
                                   userType: userType,
                                   phoneNumber: phoneNumber,
-                                  accountStatus: accountStatus)
+                                  accountStatus: accountStatus,
+                                  licenseState: accountStatus)
     }
     
     init(){
@@ -42,6 +46,7 @@ public struct LmsUserProfile{
         self.userType = ""
         self.phoneNumber = ""
         self.accountStatus = ""
+        self.licenseState = ""
     }
     
     init(
@@ -52,7 +57,8 @@ public struct LmsUserProfile{
         country: String,
         userType: String,
         phoneNumber: String,
-        accountStatus: String
+        accountStatus: String,
+        licenseState: String
     ){
         self.accountNumber = accountNumber
         self.accountName = accountName
@@ -62,6 +68,7 @@ public struct LmsUserProfile{
         self.userType = userType
         self.phoneNumber = phoneNumber
         self.accountStatus = accountStatus
+        self.licenseState = licenseState
     }
 }
 	
