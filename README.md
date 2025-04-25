@@ -2,7 +2,7 @@
 
 ## **1. Add the following line to your `Podfile`** (version number varies)  
 ```
-pod 'LmsWebView', '0.0.7', :source => 'https://github.com/CircleLMS/ios-library-sdk.git'
+pod 'LmsWebView', '0.0.8', :source => 'https://github.com/CircleLMS/ios-library-sdk.git'
 ```
 
 ## **2. Run pod install**   
@@ -37,7 +37,8 @@ struct ContentView: View {
                         country: "US",
                         userType: "Credit",
                         phoneNumber: "+11234567890",
-                        accountStatus: "A"
+                        accountStatus: "A",
+                        licenseState: "licenseState"
                     )
                 )
                 .launch(),
