@@ -10,8 +10,8 @@ pod 'LmsWebView', '0.0.8', :source => 'https://github.com/CircleLMS/ios-library-
 pod install
 ```
 ## **3. Sample URLs:**  
-Course catalog page: https://qasafetytraining.hercrentals.com/course/catalog/?iframe  
-Course detail page (used in email invitation): https://qasafetytraining.hercrentals.com/course/catalog/b8ba1023e33a11eab2fb0242ac120002?iframe
+Course catalog page: https://qasafetytraining.hercrentals.com/course/catalog  
+Course detail page (used in email invitation): https://qasafetytraining.hercrentals.com/course/catalog/b8ba1023e33a11eab2fb0242ac120002
 
 ## **4. Use the WebView Library in Your Code:**  
 Open a WebView with a specified URL using the following function:  
