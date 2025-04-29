@@ -11,7 +11,7 @@ pod install
 ```
 ## **3. Sample URLs:**  
 Course catalog page: https://qasafetytraining.hercrentals.com/course/catalog  
-Course detail page (used in email invitation): https://qasafetytraining.hercrentals.com/course/catalog/b8ba1023e33a11eab2fb0242ac120002
+Course detail page (used in email invitation): https://qasafetytraining.hercrentals.com/course/catalog/b8ba1023e33a11eab2fb0242ac120002  
 My training page: https://qasafetytraining.hercrentals.com/profile/assigned  
 
 ## **4. Use the WebView Library in Your Code:**  
