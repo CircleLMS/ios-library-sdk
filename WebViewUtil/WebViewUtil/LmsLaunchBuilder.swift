@@ -34,7 +34,7 @@ public struct LmsLaunchBuilder{
     }
     
     public func launch() -> LmsWebView {
-        let finalUrl = baseUrl + "?iframe&type=access-token&sso=" + token
+        let finalUrl = baseUrl + "?iframe&access-token=" + token
         return LmsWebView.create(url: finalUrl)
     }
     	
